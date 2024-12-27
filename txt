@@ -1,0 +1,119 @@
+<div class="filter-bar">
+            <label for="filterOrigen">Filtrar por Origen:</label>
+            <select id="filterOrigen">
+                <option value="">Todos</option>
+                <option value="Bogotá">Bogotá</option>
+                    <option value="Medellín">Medellín</option>
+                    <option value="Bello">Bello</option>
+                    <option value="Caldas">Caldas</option>
+                    <option value="Copacabana">Copacabana</option>
+                    <option value="Envigado">Envigado</option>
+                    <option value="Girardota">Girardota</option>
+                    <option value="Itagüí">Itagüí</option>
+                    <option value="La Estrella">La Estrella</option>
+                    <option value="Sabaneta">Sabaneta</option>
+                    <option value="Alta Vista">Alta Vista</option>
+                    <option value="San Antonio de Prado">San Antonio de Prado</option>
+                    <option value="Santa Elena">Santa Elena</option>
+                    <option value="Palmitas">Palmitas</option>
+                    <option value="San Cristóbal">San Cristóbal</option>
+                    <option value="Chocó-Acandí">Chocó-Acandí</option>
+                    <option value="Chocó-Certeguí">Chocó-Certeguí</option>
+                    <option value="Chocó-Condoto">Chocó-Condoto</option>
+                    <option value="Chocó- El dos">Chocó- El dos</option>
+                    <option value="Chocó-La Y">Chocó-La Y</option>
+                    <option value="Chocó- Las Animas">Chocó- Las Animas</option>
+                    <option value="Chocó- Nóvita">Chocó- Nóvita</option>
+                    <option value="Chocó-Quibdó">Chocó-Quibdó</option>
+                    <option value="Chocó-Tadó">Chocó-Tadó</option>
+                    <option value="Chocó-Tutumendo">Chocó-Tutumendo</option>
+                    <option value="Chocó-Yutó">Chocó-Yutó</option>
+                    <option value="Apartadó">Apartadó</option>
+                    <option value="Cañasgordas">Cañasgordas</option>
+                    <option value="Capurganá">Capurganá</option>
+                    <option value="Carepa">Carepa</option>
+                    <option value="Chigorodó">Chigorodó</option>
+                    <option value="Currulao">Currulao</option>
+                    <option value="Mutatá">Mutatá</option>
+                    <option value="Necoclí">Necoclí</option>
+                    <option value="Riosucio">Riosucio</option>
+                    <option value="Turbo">Turbo</option>
+                    <option value="Uramita">Uramita</option>
+            </select>
+
+            <label for="filterDestino">Filtrar por Destino:</label>
+            <select id="filterDestino">
+                <option value="">Todos</option>
+                <option value="Bogotá">Bogotá</option>
+                    <option value="Medellín">Medellín</option>
+                    <option value="Bello">Bello</option>
+                    <option value="Caldas">Caldas</option>
+                    <option value="Copacabana">Copacabana</option>
+                    <option value="Envigado">Envigado</option>
+                    <option value="Girardota">Girardota</option>
+                    <option value="Itagüí">Itagüí</option>
+                    <option value="La Estrella">La Estrella</option>
+                    <option value="Sabaneta">Sabaneta</option>
+                    <option value="Alta Vista">Alta Vista</option>
+                    <option value="San Antonio de Prado">San Antonio de Prado</option>
+                    <option value="Santa Elena">Santa Elena</option>
+                    <option value="Palmitas">Palmitas</option>
+                    <option value="San Cristóbal">San Cristóbal</option>
+                    <option value="Chocó-Acandí">Chocó-Acandí</option>
+                    <option value="Chocó-Certeguí">Chocó-Certeguí</option>
+                    <option value="Chocó-Condoto">Chocó-Condoto</option>
+                    <option value="Chocó- El dos">Chocó- El dos</option>
+                    <option value="Chocó-La Y">Chocó-La Y</option>
+                    <option value="Chocó- Las Animas">Chocó- Las Animas</option>
+                    <option value="Chocó- Nóvita">Chocó- Nóvita</option>
+                    <option value="Chocó-Quibdó">Chocó-Quibdó</option>
+                    <option value="Chocó-Tadó">Chocó-Tadó</option>
+                    <option value="Chocó-Tutumendo">Chocó-Tutumendo</option>
+                    <option value="Chocó-Yutó">Chocó-Yutó</option>
+                    <option value="Apartadó">Apartadó</option>
+                    <option value="Cañasgordas">Cañasgordas</option>
+                    <option value="Capurganá">Capurganá</option>
+                    <option value="Carepa">Carepa</option>
+                    <option value="Chigorodó">Chigorodó</option>
+                    <option value="Currulao">Currulao</option>
+                    <option value="Mutatá">Mutatá</option>
+                    <option value="Necoclí">Necoclí</option>
+                    <option value="Riosucio">Riosucio</option>
+                    <option value="Turbo">Turbo</option>
+                    <option value="Uramita">Uramita</option>
+            </select>
+
+            <button id="filterBtn">Aplicar Filtros</button>
+        </div>
+        const envios = [
+        {
+            id: 1,
+            id_usuario: 3,
+            fecha: "2024-11-25",
+            origen: "Bello",
+            destino: "Bogotá",
+            peso: 5,
+            dimensiones: "50x30x20",
+            valor: 200000
+        },
+        {
+            id: 2,
+            id_usuario: 2,
+            fecha: "2024-11-26",
+            origen: "Bogotá",
+            destino: "Medellín",
+            peso: 3,
+            dimensiones: "40x20x15",
+            valor: 150000
+        },
+        {
+            id: 3,
+            id_usuario: 1,
+            fecha: "2024-11-27",
+            origen: "Medellín",
+            destino: "Caldas",
+            peso: 8,
+            dimensiones: "60x40x25",
+            valor: 300000
+        },
+    ];

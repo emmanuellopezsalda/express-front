@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotiza tu envío</title>
+    <!-- Importar fuente de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cotizador.css">
+</head>
+<body>
+    <div class="cotizador">
+        <h2>Cotiza tu envío</h2>
+        
+        <div class="form-row">
+            <div class="form-group">
+                <label for="fecha">Fecha del envío</label>
+                <input type="date" id="fecha" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="origen">&iquest;Desde qué ciudad va tu envío?</label>
+                <select id="origen" required>
+                    <option value="Medellín">Medellín</option>
+                    <option value="Bogotá">Bogotá</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="destino">&iquest;Hacia qué ciudad va tu envío?</label>
+                <select id="destino" required>
+                    <option value="">Selecciona una ciudad</option>
+                    <option value="Bogotá" data-origen="Medellín">Bogotá</option>
+                    <option value="Medellín" data-origen="Bogotá">Medellín</option>
+                    <option value="Bello" data-origen="Medellín">Bello</option>
+                    <option value="Caldas" data-origen="Medellín">Caldas</option>
+                    <option value="Copacabana" data-origen="Medellín">Copacabana</option>
+                    <option value="Envigado" data-origen="Medellín">Envigado</option>
+                    <option value="Girardota" data-origen="Medellín">Girardota</option>
+                    <option value="Itagüí" data-origen="Medellín">Itagüí</option>
+                    <option value="La Estrella" data-origen="Medellín">La Estrella</option>
+                    <option value="Sabaneta" data-origen="Medellín">Sabaneta</option>
+                    <option value="Alta Vista" data-origen="Medellín">Alta Vista</option>
+                    <option value="San Antonio de Prado" data-origen="Medellín">San Antonio de Prado</option>
+                    <option value="Santa Elena" data-origen="Medellín">Santa Elena</option>
+                    <option value="Palmitas" data-origen="Medellín">Palmitas</option>
+                    <option value="San Cristóbal" data-origen="Medellín">San Cristóbal</option>
+                    <option value="Chocó-Acandí" data-origen="Medellín">Chocó-Acandí</option>
+                    <option value="Chocó-Certeguí" data-origen="Medellín">Chocó-Certeguí</option>
+                    <option value="Chocó-Condoto" data-origen="Medellín">Chocó-Condoto</option>
+                    <option value="Chocó- El dos" data-origen="Medellín">Chocó- El dos</option>
+                    <option value="Chocó-La Y" data-origen="Medellín">Chocó-La Y</option>
+                    <option value="Chocó- Las Animas" data-origen="Medellín">Chocó- Las Animas</option>
+                    <option value="Chocó- Nóvita" data-origen="Medellín">Chocó- Nóvita</option>
+                    <option value="Chocó-Quibdó" data-origen="Medellín">Chocó-Quibdó</option>
+                    <option value="Chocó-Tadó" data-origen="Medellín">Chocó-Tadó</option>
+                    <option value="Chocó-Tutumendo" data-origen="Medellín">Chocó-Tutumendo</option>
+                    <option value="Chocó-Yutó" data-origen="Medellín">Chocó-Yutó</option>
+                    <option value="Apartadó" data-origen="Medellín">Apartadó</option>
+                    <option value="Cañasgordas" data-origen="Medellín">Cañasgordas</option>
+                    <option value="Capurganá" data-origen="Medellín">Capurganá</option>
+                    <option value="Carepa" data-origen="Medellín">Carepa</option>
+                    <option value="Chigorodó" data-origen="Medellín">Chigorodó</option>
+                    <option value="Currulao" data-origen="Medellín">Currulao</option>
+                    <option value="Mutatá" data-origen="Medellín">Mutatá</option>
+                    <option value="Necoclí" data-origen="Medellín">Necoclí</option>
+                    <option value="Riosucio" data-origen="Medellín">Riosucio</option>
+                    <option value="Turbo" data-origen="Medellín">Turbo</option>
+                    <option value="Uramita" data-origen="Medellín">Uramita</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-group">
+                <label for="peso">&iquest;Peso real?</label>
+                <input type="number" id="peso" placeholder="kg" min="0" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ancho">Ancho (cm):</label>
+                <input type="number" id="ancho" class="form-control" placeholder="Ingrese el ancho en cm">
+            </div>
+<!--peso volumetrico-->
+        <div class="form-group">
+                <label for="largo">Largo (cm):</label>
+                <input type="number" id="largo" class="form-control" placeholder="Ingrese el largo en cm">
+        </div>
+
+        <div class="form-group">
+                <label for="alto">Alto (cm):</label>
+                <input type="number" id="alto" class="form-control" placeholder="Ingrese el alto en cm">
+        </div>
+
+        <!-- <div class="form-group">
+                <label for="pesoVolumetrico">Peso Volumétrico (kg):</label>
+                <input type="text" id="pesoVolumetrico" class="form-control" disabled>
+        </div> -->
+
+            <!--elimino donde entregar <div class="form-group">
+                <label for="entrega">&iquest;Dónde debemos entregarlo?</label>
+                <select id="entrega" required>
+                    <option value="direccion">Entrega en dirección</option>
+                    <option value="oficina">Recoger en oficina</option>
+                </select>
+            </div>-->
+
+
+            <div id="modalError" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <p id="errorMessage"></p>
+    </div>
+</div>
+
+            <div class="form-group">
+                <label for="valor">&iquest;Qué valor comercial tiene?</label>
+                <input type="number" id="valor" placeholder="$" min="0" required>
+            </div>
+        </div>
+        
+        <button id="cotizarBtn">Cotizar</button>
+        <div class="resultado" id="resultado"></div>
+    </div>
+
+   <div class="modal" id="resultadoModal">
+    <div class="modal-content">
+        <h3>Cotización de Envío</h3>
+        <p id="detalleEnvio"></p>
+        <button class="close-btn" id="close-btn">Cerrar </button>
+        <!-- Botón Programar recogida -->
+        <button id="programarRecogida" class="programar-btn">Programar recogida</button>
+    </div>
+</div>
+
+
+    <script src="cotizador4.js"></script>
+</body>
+</html>
